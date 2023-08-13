@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+}
+
+.del_btn{
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+.form-input-value{
+    border:solid 1px #ccc;
+    padding: 4px 8px;
+}

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .App-logo {
@@ -26,6 +29,36 @@
 
 .App-link {
   color: #61dafb;
+}
+
+
+input{
+  border: 1px solid #ccc;
+  padding: 4px 8px ;
+  margin: 16px 8px;
+  width: 240px;
+}
+
+button{
+  background-color: #2d165b;
+  padding: 6px 24px;
+  border: solid 1px #2d165b;
+  color: #fff;
+  margin: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #fff;
+  color: #2d165b;
+}
+button:disabled{
+  opacity: .75;
+  cursor: not-allowed;
+}
+label{
+  font-size: 14px;
 }
 
 @keyframes App-logo-spin {

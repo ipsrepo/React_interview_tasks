@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: all 0.2s ease-in-out
+}
+
+.container button{
+    font-size: 10px;
+    padding: 4px;
+    height: 28px;
+    background: transparent;
+    color: #1ea86f;
+    border-radius: 50px;
+    border: 1px solid #b4b9b7;
+}
+.container button:hover{
+    opacity: 0.5;
+}
+.container p{
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    margin: 8px 24px 8px 0;
+    width: 200px;
+    background: #f4f4f4;
+    padding: 4px 4px 4px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+.container p.completed{
+    background: #1ea86f;
+    color: #fff;
+    /*transform: scale(1.1);*/
+}
+.container p:hover{
+    transform: scale(1.1);
+}
