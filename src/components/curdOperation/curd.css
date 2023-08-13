@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > div{
+    width: 50%;
+    box-sizing: content-box;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr td, table tr th{
+    border: solid 1px #ccc;
+    padding: 6px 16px;
+    font-size: 13px;
+}
+img.del_btn{
+    cursor: pointer;
+}
+img.del_btn:hover{
+    opacity: 0.75;
+}
+
+.notification{
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #d8d6d6;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+.add-data{
+   width: 100%;
+    max-width:400px;
+    margin: 0 auto;
+}
+.add-data .input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+.add-data .input-container label{
+
+}
+.add-data .input-container input{
+    margin: 4px 0;
+}
