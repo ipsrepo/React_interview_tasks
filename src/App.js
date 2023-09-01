@@ -1,7 +1,5 @@
 import './App.css';
-import CURD from './components/curdOperation';
-import useNotification from './components/curdOperation/useNotification';
-import LocalCRUD from './components/localCRUD/localCRUD';
+import Rating from './components/startRating/rating';
 
 function App() {
   return (
@@ -11,7 +9,15 @@ function App() {
 
       {/*<CURD/>*/}
 
-        <LocalCRUD />
+        {/*<LocalCRUD />*/}
+
+        {/*<StarRate />*/}
+
+        {/*<PaperGame />*/}
+
+        {/*<T9Keyboard />*/}
+
+        <Rating />
 
     </div>
   );
