@@ -1,38 +1,89 @@
 .App {
   text-align: center;
+  display: flex;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
+button{
+  background: #12959b;
+  color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 16px;
+  border: 1px solid #12959b;
+  cursor: pointer;
+  margin: 4px;
+}
+button[disabled]{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover{
+  background: #fff;
+  color: #12959b;
+}
+
+.addUser, .userTable{
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.addUser::-webkit-scrollbar,
+.userTable::-webkit-scrollbar {
+  display: none;
+}
+
+.addUser{
+  flex-grow: 1;
+  min-width:400px;
+  padding: 0 24px;
+  background: #fff;
+  box-shadow: -14px 8px 19px 0px #a7ada81c;
+  transition: all .8s ease-in-out;
+
+}
+.userTable{
+  flex-grow: 6;
+  padding: 0 60px;
+}
+.hideUser{
+  filter: blur(5px);
+  cursor: pointer;
+}
+.hideUser section{
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table th{
+  font-size: 13px;
+  font-weight: 600;
+  color: #9ba39b;
+}
+table th, table td {
+  border: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table td{
+  font-size: 13px;
+  padding: 4px 8px;
 }
-
-.App-link {
-  color: #61dafb;
+table td button{
+  background: transparent;
+  border-radius:50px;
+  color: #9ba39b;
+  border: 1px solid #9ba39b;
+  font-size: 12px;
+  font-weight:600
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del_btn{
+  color: #c53030;
 }

@@ -1,0 +1,50 @@
+.formGroup{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto;
+    align-items: flex-start;
+    position: relative;
+}
+.formGroup label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #9ba39b;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+input,
+select{
+    width: 100%;
+    max-width: 400px;
+    padding: 4px;
+    border: none;
+    border-bottom: 1px solid #cacaca;
+
+}
+
+input[type='radio']{
+    margin: 0;
+}
+
+input:focus,
+select:focus{
+    outline: none;
+    border-bottom: 1px solid #12959b;
+    /*animation: border_anim 0.4s ease-in-out forwards;*/
+}
+
+.radioOption{
+    display: flex;
+    margin-bottom: 16px;
+}
+.radioOption label{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 8px;
+    margin: 0;
+    cursor: pointer;
+    color: #12959b;
+}
